@@ -10,7 +10,7 @@ The "Insta360 One RS 1-Inch 360 Edition" itself is running Linux - and even bett
 
 Simply connect to the AP it opens _(`ONE RS XXXXXX.OSC`)_ with the default password "88888888".
 The device has multiple open ports _(see [nmap](#nmap))_, but the most interesting _(for now)_ is port `23`, means telnet is running.
-_(my device has the firemware `2.0.8` currently, so this might change later)_
+_(my device has the firmware `2.0.8` currently, so this might change later)_
 
 I was prepared to brute force the `root` password, but I didn't get far - the `root` login is **passwordless!**:
 
