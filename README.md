@@ -31,8 +31,8 @@ Here are some loose stdouts I saved yesterday while crawling through the OS.
 Most system files are stored on my system so I might add some more information later.
 If you have any questions and/or are interesting on creating a project around the system, please let me know.
 
-#
-`
+# budybox
+```
 ~# busybox 
 BusyBox v1.25.0 (2022-11-29 18:51:59 CST) multi-call binary.
 BusyBox is copyrighted by many authors between 1998-2015.
@@ -60,4 +60,4 @@ Currently defined functions:
         setconsole, setkeycodes, setlogcons, setserial, setsid, sh, sha1sum, sha256sum, sha3sum, sha512sum, sleep, sort, start-stop-daemon, strings, stty, su, sulogin, swapoff, swapon, switch_root,
         sync, sysctl, syslogd, tail, tar, taskset, tee, telnet, telnetd, test, tftp, time, top, touch, tr, traceroute, true, truncate, tty, ubirename, udhcpc, uevent, umount, uname, uniq, unix2dos,
         unlink, unlzma, unxz, unzip, uptime, usleep, uudecode, uuencode, vconfig, vi, vlock, watch, watchdog, wc, wget, which, who, whoami, xargs, xz, xzcat, yes, zcat
-`
+```
