@@ -31,7 +31,7 @@ Here are some loose stdouts I saved yesterday while crawling through the OS.
 Most system files are stored on my system so I might add some more information later.
 If you have any questions and/or are interesting on creating a project around the system, please let me know.
 
-# budybox
+# busybox
 ```
 ~# busybox 
 BusyBox v1.25.0 (2022-11-29 18:51:59 CST) multi-call binary.
