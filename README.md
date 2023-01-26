@@ -33,6 +33,46 @@ Here are some loose stdouts I saved yesterday while crawling through the OS.
 Most system files are stored on my system so I might add some more information later.
 If you have any questions and/or are interesting on creating a project around the system, please let me know.
 
+# custom boot script built in
+Heh, the init script
+`init.d/S99bootdone` already starts the custom script `/tmp/SD0/bootup.sh` from the sdcard when found :)
+
+
+```
+# cat init.d/S99bootdone 
+#!/bin/sh
+
+echo 'S99bootdone is running...'
+
+#send boot_done to RTOS
+if [ -x /usr/bin/SendToRTOS ]; then
+	/usr/bin/SendToRTOS boot_done
+fi
+
+echo 'S99bootdone' > /sys/module/rpmsg_echo/parameters/example_printk
+
+#setup for each individual board
+if [ -x /tmp/SD0/bootup.sh ]; then
+	/tmp/SD0/bootup.sh
+fi
+
+#auto-run if file exists
+if [ -x /mnt/SCAM/cv1_auto_run.sh ]; then
+       echo 'Auto-run user script...'
+       /mnt/SCAM/cv1_auto_run.sh
+fi
+
+
+if [ -x /usr/bin/instaAIP ]; then
+	/usr/bin/instaAIP
+fi
+
+exit $?
+
+```
+
+
+
 # busybox
 
 ```
