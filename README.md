@@ -25,6 +25,9 @@ AmbaLink login: root
 ```
 
 Where to go from here?
+
+**See separate README.me in the SD0 subdirectory**
+
 Not sure yet, but it is simple to copy all systemfiles to the internal sdcard for later examination without the need to keep the camera running.
 
 Looking at some random files it seems to be very likely that the system is related to the firmware also used in other action cams, and a quick github search leads you to this [ambarella-h22-firmware-tools](https://github.com/RigacciOrg/ambarella-h22-firmware-tools) project, which possibly is able to extract and repack the firmware _(haven't tried that yet)_
