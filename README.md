@@ -26,7 +26,7 @@ AmbaLink login: root
 
 Where to go from here?
 
-**See separate README.me in the SD0 subdirectory**
+**See separate [README.md](https://github.com/frostworx/insta360-one-rs-1-inch-360-edition-linux-info/blob/main/SD0/README.md) in the SD0 subdirectory**
 
 Not sure yet, but it is simple to copy all systemfiles to the internal sdcard for later examination without the need to keep the camera running.
 
