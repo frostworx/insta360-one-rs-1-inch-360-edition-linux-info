@@ -21,6 +21,7 @@ not much to see here yet.
 - connect to user-configured wifi is non-functional yet
 - dropbear would be nice _(see [notes](#notes))_
 - tcpdump and friends would be nice
+- `ambafs` _(the sd-card is mounted with it)_ can't be exported via nfs, maybe it can be mounted natively before
 
 ## usage
 
@@ -41,6 +42,16 @@ see:
 would be nice to have dropbear, but the binary provided by arch linux uses glibc 2.34, the system has 2.21 though
 I'm undecided yet, if creating a bigger project for this is worth the time,
 so atm I'm not going to setup a matching crosscompiler env for now.
+
+when searching the web for `ambafs` you find some similar projects for other camera/drone devices.
+likely the firmware used is similar and the work on the projects could be merged (just guessing).
+random findings (unchecked so far):
+
+- https://cgg.mff.cuni.cz/gitlab/i3d/mi-camera_photo/-/raw/43c9ad80c93807b8303a4647d2bdd663797b45be/random.txt
+- https://t-shaped.nl/2020/reverse-engineering-the-vuze-xr-camera
+- https://github.com/droner69/MavicPro
+- https://github.com/RigacciOrg/ambarella-h22-firmware-tools _(not found in the ambafs context, but related anyway)_
+- more?
 
 ## maybes
 
